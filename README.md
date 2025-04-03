@@ -1,10 +1,10 @@
 # CustomGBM: A Lightweight Gradient Boosting Model  
 
 ## 📌 Overview  
-CustomGBM is a **custom-built gradient boosting model** designed for structured datasets like **salary prediction**. Unlike XGBoost, it follows a **simplified update mechanism** using residual correction, ensuring **interpretability and efficiency** while maintaining strong predictive performance.  
+CustomGBM is a **custom-built gradient boosting model** designed for structured datasets like **package prediction**. Unlike XGBoost, it follows a **simplified update mechanism** using residual correction, ensuring **interpretability and efficiency** while maintaining strong predictive performance.  
 
 ## ✨ Features  
-✔ **Gradient Boosting with Decision Trees**  
+✔ **Gradient Boosting with Decision Tree Regressor**  
 ✔ **Residual-based Updates (First-order Gradient Only)**  
 ✔ **No Complex Regularization (High Interpretability)**  
 ✔ **Customizable Learning Rate & Model Depth**  
@@ -12,7 +12,7 @@ CustomGBM is a **custom-built gradient boosting model** designed for structured 
 
 ## 🔬 How It Works  
 CustomGBM improves predictions by iteratively correcting residual errors:  
-1. **Initialization**: Predicts the average salary as the baseline.  
+1. **Initialization**: Predicts the average package as the baseline.  
 2. **Boosting Iterations**:  
    - Computes residual errors.  
    - Trains a Decision Tree on the residuals.  
